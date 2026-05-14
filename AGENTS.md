@@ -1,7 +1,7 @@
 # HJPLUS Taiwan Architect KB - Agent Instructions
 
 ## Overview
-Knowledge base for Taiwan architects with dual-language skill documentation (skill.md for AI in English, domain.md for humans in Traditional Chinese).
+Knowledge base for Taiwan architects with dual-language skill documentation (SKILL.md for AI in English, domain.md for humans in Traditional Chinese).
 
 ## Project Structure
 ```
@@ -28,7 +28,7 @@ This is a documentation-only repository. No build/lint/test commands apply.
 
 ## File Format Requirements
 
-### skill.md (AI-facing, English)
+### SKILL.md (AI-facing, English)
 **Required frontmatter:**
 ```yaml
 ---
@@ -58,8 +58,19 @@ user-invocable: true
 | Top-level category | Traditional Chinese | `建築設計與規劃/` |
 | Subcategory | Traditional Chinese | `設計理論/` |
 | Skill directory | lowercase-hyphenated | `concept-design/` |
-| Files inside skill | snake_case | `skill.md`, `domain.md` |
+| Files inside skill | SKILL.md (uppercase), domain.md | `SKILL.md`, `domain.md` |
 | Frontmatter name | lowercase-hyphenated | `name: building-envelope` |
+
+**CRITICAL**: The skill directory name **MUST** exactly match the `name` field in SKILL.md frontmatter. This is a hard requirement of the Agent Skills standard (Claude Code, OpenCode).
+
+**Chinese directory conversion**: If a user creates a skill folder with a Chinese name (e.g., `排煙設備審查/`), the Agent **MUST** rename it to lowercase-hyphenated English (e.g., `smoke-exhaust-review/`) and inform the user. Upper-level categories and subcategories may remain in Chinese.
+
+**English translation, NOT pinyin**: Skill directory names must be English translations of the concept, never Chinese pinyin.
+
+- ✅ `smoke-exhaust-review/` (英文翻譯)
+- ✅ `building-area-review/` (英文翻譯)
+- ❌ `pai-yan-she-bei-shen-cha/` (拼音)
+- ❌ `jian-zhu-mian-ji/` (拼音)
 
 ## Code Style Guidelines
 
@@ -97,15 +108,15 @@ Include MCP tool call examples with official Taiwan Building Code URLs:
 
 ## Creating a New Skill
 1. Choose category/subcategory directory
-2. Create `Category/Subcategory/skill-name/`
-3. Write `skill.md` with frontmatter + English technical content
+2. Create `Category/Subcategory/skill-name/` (**lowercase-hyphenated English only**, NOT Chinese)
+3. Write `SKILL.md` with frontmatter + English technical content (the `name` field MUST match the directory name)
 4. Write `domain.md` with Traditional Chinese content
 5. Update `Category/Subcategory/README.md` table
 6. Update root `README.md` skill count
 
 ## Editing Existing Skills
-- Never delete existing `skill.md` or `domain.md` without replacement
-- Keep frontmatter intact in `skill.md`
+- Never delete existing `SKILL.md` or `domain.md` without replacement
+- Keep frontmatter intact in `SKILL.md`
 - Sync changes between skill.md and domain.md
 - Preserve `<!-- TODO -->` markers in B-class skills
 
@@ -123,8 +134,9 @@ pcc-downloader_download_specification(chapter="09", keyword="09910", format="pdf
 
 ## Validation Checklist
 Before committing:
-- [ ] skill.md has valid frontmatter (name, description, user-invocable)
-- [ ] skill.md is in English with technical precision
+- [ ] SKILL.md has valid frontmatter (name, description, user-invocable)
+- [ ] SKILL.md is in English with technical precision
+- [ ] SKILL.md name matches the directory name exactly
 - [ ] domain.md is in Traditional Chinese
 - [ ] B-class skills have `<!-- TODO -->` markers
 - [ ] C-class skills have MCP tool examples
@@ -158,6 +170,7 @@ interface SkillParams {
 ## Prohibited
 - Do not add frontmatter to domain.md
 - Do not use Simplified Chinese in any file
+- Do not use Chinese characters in skill directory names (use lowercase-hyphenated English instead)
 - Do not hardcode absolute paths
 - Do not commit secrets, credentials, or personal data
 - Do not remove TODO markers without completing the adaptation

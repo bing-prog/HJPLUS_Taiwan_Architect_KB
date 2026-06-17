@@ -23,6 +23,7 @@
 > 感謝所有貢獻者！此區塊記錄近期已合併的 PR。
 
 - **2026-06-17** 🏗️ 新增混凝土結構設計分類（5 個 C 類技能）([#9](https://github.com/h30190/HJPLUS_Taiwan_Architect_KB/pull/9))
+- **2026-06-17** ♿ 新增無障礙出入口門淨寬實務陷阱技能 ([#12](https://github.com/h30190/HJPLUS_Taiwan_Architect_KB/pull/12))
 - **2026-05-17** ✨ 新增公共工程分類（公開招標、公開閱覽） ([#4](https://github.com/h30190/HJPLUS_Taiwan_Architect_KB/pull/4))
 - **2026-05-03** 🔥 新增排煙窗法規檢討技能 ([#1](https://github.com/h30190/HJPLUS_Taiwan_Architect_KB/pull/1))
 
@@ -89,13 +90,14 @@
 
 ### 4️⃣ [建築法規](建築法規/) Building Codes & Regulations
 
-**5 個技能模組（5C）**
+**6 個技能模組（6C）**
 
 - **消防安全/**
   - [taiwan-fire-safety](建築法規/消防安全/taiwan-fire-safety/) (C 類台灣法規)
-  - [smoke-exhaust-review](建築法規/消防安全/smoke-exhaust-review/) (C 類台灣法規)
+  - [smoke-exhaust-review](建築法規/消防安全/排煙窗法規檢討/smoke-exhaust-review/) (C 類台灣法規)
 - **無障礙設計/**
   - [taiwan-accessibility](建築法規/無障礙設計/taiwan-accessibility/) (C 類台灣法規)
+  - [accessible-door-clear-width](建築法規/無障礙設計/無障礙出入口門淨寬實務陷阱/accessible-door-clear-width/) (C 類台灣法規)
 - **施工文件與驗收/**
   - [taiwan-construction-docs](建築法規/施工文件與驗收/taiwan-construction-docs/) (C 類台灣法規)
 - **容積率與建蔽率計算/**
@@ -198,7 +200,7 @@
 |-----|-|-|-|
 | **A 類通用技能** | 5 個 | 國際通用標準，無需台灣適配 | AI + 人類直接使用 |
 | **B 類適配技能** | 8 個 | 國際規範→台灣適配，保留 TODO 注記 | 國際→台灣雙向支援 |
-| **C 類台灣法規技能** | 12 個 | 完全台灣法規，MCP 工具對接 | 台灣法規本位，官方對接 |
+| **C 類台灣法規技能** | 13 個 | 完全台灣法規，MCP 工具對接 | 台灣法規本位，官方對接 |
 
 ---
 

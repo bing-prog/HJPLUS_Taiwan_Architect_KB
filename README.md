@@ -91,7 +91,7 @@
 
 ### 4️⃣ [建築法規](建築法規/) Building Codes & Regulations
 
-**9 個技能模組（9C）**
+**14 個技能模組（14C）**
 
 - **消防安全/**
   - [taiwan-fire-safety](建築法規/消防安全/taiwan-fire-safety/) (C 類台灣法規)
@@ -105,7 +105,12 @@
   - [taiwan-programming](建築法規/容積率與建蔽率計算/taiwan-programming/) (C 類台灣法規)
 - **文化資產保存法/**
   - [cultural-heritage-items](建築法規/文化資產保存法/文化資產項目/cultural-heritage-items/) (C 類台灣法規)
+  - [heritage-investigation](建築法規/文化資產保存法/調查研究/heritage-investigation/) (C 類台灣法規)
+  - [heritage-restoration-design](建築法規/文化資產保存法/修復設計/heritage-restoration-design/) (C 類台灣法規)
+  - [heritage-supervision-report](建築法規/文化資產保存法/監造與工作報告/heritage-supervision-report/) (C 類台灣法規)
   - [adaptive-reuse-response-plan](建築法規/文化資產保存法/修復再利用因應計畫/adaptive-reuse-response-plan/) (C 類台灣法規)
+  - [heritage-tdr](建築法規/文化資產保存法/容積移轉/heritage-tdr/) (C 類台灣法規)
+  - [heritage-tax-exemption](建築法規/文化資產保存法/稅賦減免/heritage-tax-exemption/) (C 類台灣法規)
   - [heritage-restoration-phases](建築法規/文化資產保存法/修復工程程序/heritage-restoration-phases/) (C 類台灣法規)
   - [heritage-incentives-compensation](建築法規/文化資產保存法/文化資產獎勵與補償/heritage-incentives-compensation/) (C 類台灣法規)
 
@@ -206,7 +211,7 @@
 |-----|-|-|-|
 | **A 類通用技能** | 5 個 | 國際通用標準，無需台灣適配 | AI + 人類直接使用 |
 | **B 類適配技能** | 8 個 | 國際規範→台灣適配，保留 TODO 注記 | 國際→台灣雙向支援 |
-| **C 類台灣法規技能** | 17 個 | 完全台灣法規，MCP 工具對接 | 台灣法規本位，官方對接 |
+| **C 類台灣法規技能** | 22 個 | 完全台灣法規，MCP 工具對接 | 台灣法規本位，官方對接 |
 
 ---
 

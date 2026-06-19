@@ -91,7 +91,7 @@
 
 ### 4️⃣ [建築法規](建築法規/) Building Codes & Regulations
 
-**14 個技能模組（14C）**
+**15 個技能模組（15C）**
 
 - **消防安全/**
   - [taiwan-fire-safety](建築法規/消防安全/taiwan-fire-safety/) (C 類台灣法規)
@@ -113,10 +113,11 @@
   - [heritage-tax-exemption](建築法規/文化資產保存法/稅賦減免/heritage-tax-exemption/) (C 類台灣法規)
   - [heritage-restoration-phases](建築法規/文化資產保存法/修復工程程序/heritage-restoration-phases/) (C 類台灣法規)
   - [heritage-incentives-compensation](建築法規/文化資產保存法/文化資產獎勵與補償/heritage-incentives-compensation/) (C 類台灣法規)
+- **建築技術規則/**
+  - [taiwan-stair-railing-ramp](建築法規/建築技術規則/樓梯欄杆坡道/taiwan-stair-railing-ramp/) (C 類台灣法規) — 第七節 樓梯、欄杆、坡道（§33–39）；目前完整收錄 §33 樓梯寬度
 
-**9 個待建立目錄**
+**8 個待建立目錄**
 
-- 建築技術規則/
 - 建築法/
 - 都市計畫法/
 - 建築材料與構造/

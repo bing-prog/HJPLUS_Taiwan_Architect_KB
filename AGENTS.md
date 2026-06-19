@@ -33,7 +33,7 @@ Pre-commit hook (`.pre-commit-config.yaml`): runs `python scripts/run_graphify.p
 |-------|-------------|--------------|
 | A | International standards | No Taiwan adaptation needed |
 | B | International → Taiwan | `<!-- TODO: Taiwan adaptation needed -->` before US/international spec blocks |
-| C | Taiwan-specific with MCP | Must include MCP tool call examples |
+| C | Taiwan-specific | May include MCP tool call examples (optional) |
 
 ## File Naming — CRITICAL
 
@@ -101,8 +101,9 @@ metadata:
 | Frontmatter | English |
 | Directory names (Chinese) | Traditional Chinese only — **no Simplified Chinese** |
 
-## C-Class MCP Integration
-Include MCP tool call examples:
+## C-Class MCP Integration (Optional)
+
+If applicable, MCP tool call examples may be included:
 ```
 taiwan-building-code_search_building_code(query="防火區劃", limit=10)
 taiwan-building-code_search_building_interpretations(query="避難設施")
